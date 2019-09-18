@@ -1,24 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Gd-RP-WFW">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Dot View Controller-->
+        <scene sceneID="9ds-VE-Srd">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController storyboardIdentifier="DotViewController" id="7Gd-RP-WFW" customClass="DotViewController" customModule="DotClick" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a3i-bg-taA"/>
+                        <viewControllerLayoutGuide type="bottom" id="oB4-9x-tej"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cGX-4C-hRR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPz-xh-8hS">
+                                <rect key="frame" x="114.5" y="644" width="185.5" height="38"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Tap to start">
+                                        <attributes>
+                                            <color key="NSColor" red="0.70979999999999999" green="0.45490000000000003" blue="0.96077999999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Do not support drag and drop">
+                                        <attributes>
+                                            <color key="NSColor" red="0.37056" green="0.37056" blue="0.37056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="11" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGR-oO-JYW">
+                                <rect key="frame" x="16" y="44" width="81.5" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.70980392160000005" green="0.4549019608" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0f0-K7-mG9">
+                                <rect key="frame" x="16" y="72" width="82" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.70980392160000005" green="0.4549019608" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.90588235289999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cGR-oO-JYW" firstAttribute="leading" secondItem="cGX-4C-hRR" secondAttribute="leading" constant="16" id="0E9-9y-rWw"/>
+                            <constraint firstItem="0f0-K7-mG9" firstAttribute="leading" secondItem="cGR-oO-JYW" secondAttribute="leading" id="2L9-Xs-TyT"/>
+                            <constraint firstItem="cGR-oO-JYW" firstAttribute="top" secondItem="a3i-bg-taA" secondAttribute="bottom" id="ISu-ux-3zA"/>
+                            <constraint firstItem="yPz-xh-8hS" firstAttribute="centerX" secondItem="cGX-4C-hRR" secondAttribute="centerX" id="IhG-UV-si3"/>
+                            <constraint firstItem="Zod-wb-1t0" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0f0-K7-mG9" secondAttribute="trailing" symbolic="YES" id="Y5M-MH-1JT"/>
+                            <constraint firstItem="0f0-K7-mG9" firstAttribute="top" secondItem="cGR-oO-JYW" secondAttribute="bottom" constant="8" id="kSw-D1-gSQ"/>
+                            <constraint firstItem="oB4-9x-tej" firstAttribute="top" secondItem="yPz-xh-8hS" secondAttribute="bottom" constant="180" id="nDN-Jo-KQ5"/>
+                            <constraint firstItem="Zod-wb-1t0" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cGR-oO-JYW" secondAttribute="trailing" symbolic="YES" id="uzJ-9z-35P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zod-wb-1t0"/>
                     </view>
+                    <connections>
+                        <outlet property="bestTimeLabel" destination="cGR-oO-JYW" id="a7b-OM-IXo"/>
+                        <outlet property="clockLabel" destination="0f0-K7-mG9" id="0w6-2Y-VjK"/>
+                        <outlet property="startLabel" destination="yPz-xh-8hS" id="SmN-66-JcN"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T9C-dG-IUE" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-214" y="120"/>
         </scene>
     </scenes>
 </document>
