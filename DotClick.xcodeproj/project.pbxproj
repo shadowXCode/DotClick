@@ -913,8 +913,9 @@
 			baseConfigurationReference = B9446F66B6647696B9E4105B /* Pods-DotClick.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XJH4F5UWPP;
+				DEVELOPMENT_TEAM = UGKNH5UZYJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DotClick",
@@ -927,6 +928,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ershuai.DotClick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -938,8 +940,9 @@
 			baseConfigurationReference = C096E8A6F84203704E2ECD38 /* Pods-DotClick.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XJH4F5UWPP;
+				DEVELOPMENT_TEAM = UGKNH5UZYJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DotClick",
@@ -952,6 +955,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ershuai.DotClick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
